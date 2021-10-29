@@ -1,0 +1,11 @@
+.post{
+    padding: 15px 10px;
+    border: #2F3336 solid 1px;
+    max-width: 500px;
+}
+.post + .post {
+    margin-top: 25px;
+}
+.text{
+    color: #D9D9D9;
+}

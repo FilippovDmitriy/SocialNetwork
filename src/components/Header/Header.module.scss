@@ -1,0 +1,32 @@
+.header {
+    padding: 0 10px;
+    position: fixed;
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    border: #2F3336 solid 1px;
+    background-color: #000;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        width: auto;
+        height: 85%;
+    }
+}
+.authorization {
+    color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    .logOut {
+        padding: 10px 20px;
+        background: #2F3336;
+        color: #D9D9D9;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    a {
+        color: #D9D9D9;
+    }
+}

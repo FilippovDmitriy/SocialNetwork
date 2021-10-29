@@ -1,0 +1,17 @@
+.nav {
+    padding: 10px 10px 50px;
+    grid-area: nav;
+    border: #2F3336 solid 1px;
+    background-color: #000;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.link {
+    margin-bottom: 12px;
+}
+
+.link a {
+    font-size: 20px;
+    color: #D9D9D9;
+}

@@ -1,0 +1,17 @@
+.postsForm {
+  margin-bottom: 40px;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background: #2F3336;
+    color: #D9D9D9;
+  }
+}
+.textarea {
+  max-width: 500px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+.checkboxLabel {
+  position: relative;
+  align-self: flex-start;
+  cursor: pointer;
+  display: flex;
+  .checkSpan {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background-color: #2F3336;
+  }
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  input:checked + .checkSpan {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 2px;
+      background-color: #D9D9D9;
+      left: 25%;
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 2px;
+      background-color: #D9D9D9;
+      left: 35%;
+      top: 40%;
+      transform: rotate(-45deg);
+    }
+  }
+}
+.formError {
+  margin: 20px 0 0;
+}
+
+.captcha {
+  margin-top: 20px;
+  input {
+    margin-top: 20px;
+  }
+}
+.form {
+  align-items: flex-start;
+}
