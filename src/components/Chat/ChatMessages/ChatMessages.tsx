@@ -23,7 +23,7 @@ export const ChatMessages: FC = () => {
         if (isAutoScroll) {
             messagesAnchorRef.current?.scrollIntoView();
         }
-    }, [messages])
+    }, [messages, isAutoScroll])
 
     return (
         <div className={style.chatMessages} onScroll={messageScrollHandler}>

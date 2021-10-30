@@ -28,17 +28,15 @@ const MyPostsForm: FC<Props> = (props) => {
     };
 
     useEffect(() => {
-        if (inputRef.current) {
-            inputRef.current.addEventListener("keydown", listenerKeyDownInput);
-        }
+        let currentInputRef = inputRef.current;
+        currentInputRef?.addEventListener("keydown", listenerKeyDownInput);
+
         if (isRequiredSubmit && buttonRef.current) {
             buttonRef.current.click();
             setIsRequiredSubmit(false);
         }
         return () => {
-            if (inputRef.current) {
-                inputRef.current.removeEventListener("keydown", listenerKeyDownInput);
-            }
+            currentInputRef?.removeEventListener("keydown", listenerKeyDownInput);
         };
     }, [isRequiredSubmit])
     
